@@ -30,12 +30,21 @@
     <ClCompile Include="lve_pipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lve_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lve_window_bb.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="first_app.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lve_device.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_engine_device.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

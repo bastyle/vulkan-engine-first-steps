@@ -27,4 +27,17 @@ namespace lve
 		//std::cout << " glfwCreateWindow: \n" << height;
 	}
 
+	bool LveWindow::shouldClose()
+	{
+		return glfwWindowShouldClose(this->window);
+	}
+
+	void LveWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR* surface)
+	{
+		if(glfwCreateWindowSurface(instance, window, nullptr, surface)!= VK_SUCCESS)
+		{
+			throw std::runtime_error("failed to create a window surface");
+		}
+	}
+
 }

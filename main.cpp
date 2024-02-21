@@ -11,6 +11,8 @@
 
 #include "first_app.hpp"
 
+#include <map>
+
 void testLveWindowBB()
 {
     //lve::LveWindow window(800, 600, "My Vulkan Window");
@@ -47,6 +49,20 @@ void testVulcan()
 int main() {
     //testVulcan();
     //testLveWindowBB();
+    std::map<int, std::string> mis{};
+    mis[0] = "zero";
+    mis[1] = "one";
+
+    std::map<std::string, int> mis2{};
+    mis2["zero"] = 0;
+    mis2["one"] = 1;
+     
+    std::multimap<int, std::string> mmis{};
+    mmis.insert(std::make_pair(0, "zero"));
+    mmis.insert(std::make_pair(0, "zero_2"));
+
+
+
     lve::FirstApp app{};
     try {
         app.run();
